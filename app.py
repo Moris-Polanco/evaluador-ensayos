@@ -23,7 +23,7 @@ if essay:
         engine=model_engine,
         prompt=prompt,
         max_tokens=1024,
-        temperature=0.5,
+        temperature=0.8,
         top_p=1,
         frequency_penalty=0.5,
         presence_penalty=0.5
