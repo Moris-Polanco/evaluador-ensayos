@@ -15,7 +15,7 @@ essay = st.text_area("Pegue su ensayo:")
 # Genera una respuesta utilizando el modelo de lenguaje GPT-3
 if essay:
     prompt = (f"Su tarea es evaluar la calidad de los ensayos académicos que se le presentan." 
-              f"Evalúelos como lo haría un profesor de Harvard y póngales una nota de cero a cien." 
+              f"Evalúelos como lo haría un profesor exigente y póngales una nota de cero a cien." 
               f"Dé tres evaluaciones, como si fueran tres evaluadores." 
               f"El ensayo debe tener al menos cinco párrafos; de lo contrario diga 'Extensión insuficiente. Se requieren al menos cinco párrafos.' y no lo evalúe.\n{essay}\n")
     completions = openai.Completion.create(
