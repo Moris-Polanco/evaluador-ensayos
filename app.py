@@ -16,6 +16,7 @@ essay = st.text_area("Pegue su ensayo:")
 if essay:
     prompt = (f"Su tarea es evaluar la calidad de los ensayos académicos que se le presentan." 
               f"Evalúelos como lo haría un profesor exigente y póngales una nota de cero a cien." 
+              f"Réstele puntos si tiene faltas de ortografía."
               f"Dé tres evaluaciones, como si fueran tres evaluadores." 
               f"El ensayo debe tener al menos cinco párrafos; de lo contrario diga 'Extensión insuficiente. Se requieren al menos cinco párrafos.' y no lo evalúe.\n{essay}\n")
     completions = openai.Completion.create(
